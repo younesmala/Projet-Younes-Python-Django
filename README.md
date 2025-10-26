@@ -37,9 +37,7 @@ Ce projet utilise le framework \*\*Django 5\*\* pour concevoir une application w
 ---
 
 
-
 \## Installation locale
-
 
 
 \### 1. Cloner le projet
@@ -51,9 +49,7 @@ git clone https://github.com/younesmala/Projet-Younes-Python-Django.git
 cd Projet-Younes-Python-Django
 
 
-
 \### 2. Créer et activer un environnement virtuel
-
 
 
 python -m venv .venv
@@ -65,29 +61,21 @@ python -m venv .venv
 source .venv/bin/activate   # sur Linux / Mac
 
 
-
 \### 3. Installer les dépendances
-
 
 
 pip install -r requirements.txt
 
 
-
 \### 4. Configurer la base de données
-
 
 
 Dans le fichier reservations/settings.py, ajustez les paramètres du bloc DATABASES selon votre environnement :
 
 
-
 Exemples: 
 
-
-
 MySQL: 							
-
 
 
 DATABASES = {
@@ -111,7 +99,6 @@ DATABASES = {
 }
 
 
-
 SQLite: 
 
 DATABASES = {
@@ -127,21 +114,18 @@ DATABASES = {
 }
 
 
-
 \### 5: Appliquer les migrations
-
 
 
 python manage.py migrate
 
 
-
 \### 6: Lancer le serveur
-
 
 
 python manage.py runserver
 
+---
 
 
 => L’application est accessible à l’adresse :
@@ -193,6 +177,7 @@ Licence :
 
 
 Projet académique à usage pédagogique — non destiné à un usage commercial.
+
 
 
 
