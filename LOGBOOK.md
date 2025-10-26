@@ -289,11 +289,15 @@ Tout le code consolidé dans Projet-Younes-Python-Django.
 Création du README.md clair et propre.
 
 
-
 Ajout du LOGBOOK.md et WIKI.md pour suivi du projet.
 
 
-**\*\*🔹 11. autres oublis\*\***
+### 🔹 11. Nettoyage final
+
+- Suppression de l’ancien dépôt `reservationsDjango`.  
+- Tout le code consolidé dans **Projet-Younes-Python-Django**. 
+
+**\*\*🔹 12. autres oublis\*\***
 
 
 - Toujours activer le venv avant pip install.
@@ -301,5 +305,13 @@ Ajout du LOGBOOK.md et WIKI.md pour suivi du projet.
 \* Fermer correctement les blocs ``` dans les fichiers Markdown (README tout écrit en mode code)
 - Vérifier les branches avant un push.
 
+###🔹 13. WIKI en doublon dans mon projet \*\***
+
+- Ajout d’une section Wiki directement sur GitHub pour centraliser toutes les commandes et notes techniques.  
+- Suppression du fichier local `WIKI.md` (désormais remplacé par le Wiki en ligne).  
+- Ajout d’un lien vers le Wiki dans le README principal :  
+[Consulter le Wiki complet du projet](https://github.com/younesmala/Projet-Younes-Python-Django/wiki)
 
 # 
+
+Dernière mise à jour : octobre 2025
