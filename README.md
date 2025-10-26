@@ -131,15 +131,22 @@ python manage.py runserver
 L’application est accessible à l’adresse :  
 http://127.0.0.1:8000/
 
-## 📁 Structure du projet
+## Structure du projet
 
 Projet-Younes-Python-Django/
+
 ├── catalogue/ # Application interne Django
+
 ├── reservations/ # Projet principal (settings, urls, etc.)
+
 ├── manage.py # Point d’entrée du projet
+
 ├── db.sqlite3 # Base de données locale
+
 ├── requirements.txt # Dépendances Python
+
 ├── .gitignore # Fichiers ignorés par Git
+
 └── .venv/ # Environnement virtuel (local)
 
 Auteur: 
