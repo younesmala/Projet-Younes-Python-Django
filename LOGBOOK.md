@@ -314,4 +314,62 @@ Ajout du LOGBOOK.md et WIKI.md pour suivi du projet.
 
 # 
 
-Dernière mise à jour : octobre 2025
+###🔹 14. erreurs déctectées suite au mapping relationnel \*\***
+
+la transition de Python 3.14 → Python 3.12 (compatibilité Django + mysqlclient)
+
+la création correcte d’un environnement virtuel propre (.venv)
+
+le remplacement du driver mysql-connector (non supporté) par mysqlclient
+
+la correction du backend BD dans settings.py
+
+la résolution des erreurs de connexion MySQL/MariaDB
+
+la réparation des migrations du projet
+
+la mise à jour du LogBook pour documenter l’ensemble des problèmes rencontrés
+
+==> Détails des problèmes résolus:
+
+Incompatibilité Python 3.14 avec mysqlclient → downgrade vers Python 3.12
+
+Erreurs liées au driver MySQL non supporté
+
+Backend de la base mal configuré dans settings.py
+
+Migrations bloquées / base non accessible
+
+Erreur « Can't connect to MySQL server » due à un mauvais driver
+
+Erreur « display_name() takes 0 positional arguments » générée par le mauvais connecteur
+
+Versions Django incompatibles → passage à Django 4.2.16 LTS
+
+Analyse d’un projet fonctionnel pour vérifier le mapping relationnel
+
+Documentation complète ajoutée dans le logbook
+
+==> Résultat:
+
+Le projet Django fonctionne désormais correctement
+
+Les migrations sont opérationnelles
+
+Le StarterKit est aligné avec les attentes du professeur
+
+Le logbook est tenu à jour
+
+==> POINTS D'ATTENTION: 
+
+Toujours vérifier la compatibilité Python / Django / MySQL
+
+Les drivers MySQL doivent correspondre au backend utilisé
+
+Les erreurs de migrations sont souvent liées au driver ou aux versions
+
+Git n’accepte pas de commit sans modification locale
+
+Documenter systématiquement chaque erreur et solution
+
+Dernière mise à jour : 30 novembre 2025
