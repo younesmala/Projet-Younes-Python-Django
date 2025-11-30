@@ -1,6 +1,17 @@
-__pycache__/
-*.pyc
-db.sqlite3
+# Virtual environment
 .venv/
+.virtualenvs/
+
+# Environment variables
+.env
+
+# Database files
+*.sqlite3
+
+# PyCharm / VSCode
+.idea/
 .vscode/
-Thumbs.db
+
+# __pycache__
+__pycache__/
+*.py[cod]
