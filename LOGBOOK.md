@@ -152,9 +152,10 @@ INSTALLED\\\_APPS = \\\[
 
 ]
 
+---
 
 
-**\*\*🔹 6. Configuration de la base de données\*\***
+🔹 6. Configuration de la base de données\
 
 
 
@@ -201,8 +202,10 @@ DATABASES = {
 }
 
 
+---
 
-**\*\*🔹 7. Gestion de Git et GitHub\*\***
+
+🔹 7. Gestion de Git et GitHub\
 
 
 
@@ -371,5 +374,11 @@ Les erreurs de migrations sont souvent liées au driver ou aux versions
 Git n’accepte pas de commit sans modification locale
 
 Documenter systématiquement chaque erreur et solution
+
+###🔹 15. acces admin 
+rootadmin
+Admin123!
+
+
 
 Dernière mise à jour : 30 novembre 2025

@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import Http404
 
-from catalogue.forms.ArtistForm import ArtistForm
 from catalogue.models import Artist
+from catalogue.forms.ArtistForm import ArtistForm
+
 
 
 
@@ -51,14 +52,21 @@ def edit(request, artist_id):
     })
 
 
-def create (request):
+def create(request):
+    # On crée un formulaire vide ou pré-rempli avec les données POST
     form = ArtistForm(request.POST or None)
 
-    if request.method == 'POST' and form.is_valid():
-        form.save()
+    if request.method == 'POST':
+        # Si on a soumis le formulaire
+        if form.is_valid():
+            form.save()  # Enregistre un nouvel artiste dans la DB
+            return redirect('catalogue:artist-index')  # Retour à la liste
 
-        return redirect('catalogue:artist-index')
-    return render(request, 'artist/create.html', {'form' : form,})
+    # Si on arrive en GET ou que le formulaire n'est pas valide
+    return render(request, 'artist/create.html', {
+        'form': form,
+    })
+
 
 def delete(request, artist_id):
     artist = get_object_or_404(Artist, id =artist_id)

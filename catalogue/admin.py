@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Artist  # on importe le modèle Artist
 
-# Register your models here.
+# On enregistre le modèle Artist dans l'interface d'admin
+admin.site.register(Artist)
