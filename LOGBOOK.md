@@ -401,6 +401,13 @@ Après cela, l’accès à /admin/ fonctionnait parfaitement.
 rootadmin
 Admin123!
 
+## Organisation du groupe
+
+- Création du dépôt GitHub de groupe : PID_Groupe3
+- Ajout des membres du groupe en tant que collaborateurs
+- Mise en place d’une organisation de travail basée sur des branches personnelles
 
 
-Dernière mise à jour : 02 décembre 2025
+
+
+Dernière mise à jour : 11/01/2026
