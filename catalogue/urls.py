@@ -7,6 +7,7 @@ urlpatterns = [
     # Liste des artistes
     path('artist/', views.index, name='artist-index'),
 
+
     # Fiche d'un artiste (détail)
     path('artist/<int:artist_id>/', views.show, name='artist-show'),
 
