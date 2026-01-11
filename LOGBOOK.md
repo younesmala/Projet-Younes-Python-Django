@@ -128,17 +128,12 @@ python manage.py runserver
 
 **### 🔹 5. Ajout de l’application `catalogue`**
 
-\- Création :
-
-
-
+- Création :
 
 
 python manage.py startapp catalogue
 
-
-
-\- Ajout dans `settings.py` :
+- Ajout dans `settings.py` :
 
 ```python
 
@@ -376,9 +371,36 @@ Git n’accepte pas de commit sans modification locale
 Documenter systématiquement chaque erreur et solution
 
 ###🔹 15. acces admin 
+Accès impossible à Django Admin
+
+Le login vers /admin/ échouait systématiquement avec :
+
+Please enter the correct username and password for a staff account.
+
+
+Causes possibles :
+
+mauvais mot de passe
+
+compte non-staff
+
+superuser non créé correctement
+
+Solution :
+Réinitialisation du compte administrateur via le shell Django :
+
+from django.contrib.auth.models import User
+u, created = User.objects.get_or_create(username="rootadmin")
+u.is_staff = True
+u.is_superuser = True
+u.set_password("Admin123!")
+u.save()
+
+
+Après cela, l’accès à /admin/ fonctionnait parfaitement.
 rootadmin
 Admin123!
 
 
 
-Dernière mise à jour : 30 novembre 2025
+Dernière mise à jour : 02 décembre 2025
